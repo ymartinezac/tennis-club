@@ -10,21 +10,65 @@
 </head>
 
 <body>
-    <header>
-        <div class="header__container">
-            <div class="logo"><img class="logo__icon" src="./assets/images/logo-green.png" /><span
-                    class="logo__text">Solstice
-                    Tennis Club</span>
+    <include src="./views/header.html"></include>
+    <main>
+        <section class="members">
+            <div class="members__grid-item card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/member4.avif" alt="member4">
+                <div class="card-body">
+                    <h5 class="card-title">Member One</h5>
+                    <p class="card-text">Far far away, behind the word mountains, far
+                        from the countries Vokalia and Consonantia.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
             </div>
-            <nav>
-                <a class="header__link" href="/">Home</a>
-                <a class="header__link" href="/members">Members</a>
-                <a class="header__link" href="/blog">Blog</a>
-                <a class="header__link" href="/join">Join</a>
-            </nav>
-        </div>
-    </header>
-    <div>members</div>
+            <div class="members__grid-item card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/member1.avif" alt="member1">
+                <div class="card-body">
+                    <h5 class="card-title">Member Two</h5>
+                    <p class="card-text">Separated they live in Bookmarksgrove
+                        right at the coast of the Semantics.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="members__grid-item card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/member2.avif" alt="member2">
+                <div class="card-body">
+                    <h5 class="card-title">Member Three</h5>
+                    <p class="card-text">A small river named Duden flows by their
+                        place and supplies it.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="members__grid-item card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/member3.avif" alt="member3">
+                <div class="card-body">
+                    <h5 class="card-title">Member Four</h5>
+                    <p class="card-text">It is a paradisematic country, in which roasted
+                        parts of sentences fly into your mouth.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="members__grid-item card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/member4.avif" alt="member4">
+                <div class="card-body">
+                    <h5 class="card-title">Member Five</h5>
+                    <p class="card-text">Even the all-powerful Pointing has no
+                        control about the blind texts.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="members__grid-item card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/member2.avif" alt="member2">
+                <div class="card-body">
+                    <h5 class="card-title">Member Six</h5>
+                    <p class="card-text">One day however a small line of blind text
+                        by the name of Lorem Ipsum.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>

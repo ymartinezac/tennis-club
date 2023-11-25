@@ -1,6 +1,5 @@
 @use '../_variables.scss';
 
-
 .enrollment {
   background-image: url(../images/jake-nackos-C2PCa6DhlYE-unsplash.avif);
   background-size: cover;
@@ -53,6 +52,7 @@
 
 .activities__icon {
   margin: 30px;
+  color: $primary;
 }
 
 @supports (display: grid) {
