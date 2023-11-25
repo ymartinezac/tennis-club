@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Solstice Tennis Club</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <main>
+    <section class="enrollment">
+      <div class="enrollment__container">
+        <h1 class="enrollment__title">Enrollments Open!</h1>
+        <div class="enrollment__date">
+          <p class="enrollment__text">Try outs will be held on <b>October 1st, 2023.</b></p>
+        </div>
+        <div class="enrollment__subscribe">
+          <p class="enrollment__text">All levels are welcome.</p>
+          <button class="btn btn-secondary">Join the club!</button>
+        </div>
+      </div>
+    </section>
+    <section class="activities">
+      <div class="activities__container ">
+        <div class="activities__card"><i class="fa-solid fa-bullseye fa-2xl activities__icon"></i>
+          <p class="activities__text">Learn about our categories and practices schedule. We offer flexible schedules
+            that
+            you can fit in your
+            weeks!
+          </p>
+        </div>
+        <div class="activities__card"><i class="fa-solid fa-trophy fa-2xl activities__icon"></i>
+          <p class="activities__text">News about upcoming tournaments and results of previous ones. We
+            include tournaments organized by other organizations.</p>
+        </div>
+        <div class="activities__card"><i class="fa-solid fa-envelope fa-2xl activities__icon"></i>
+          <p class="activities__text">From news about the club to anything tennis related, join our newsletter and never
+            miss out on our activities.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

@@ -1,57 +1,167 @@
-* {
-  box-sizing: border-box;
+@use '../_variables.scss';
+
+
+.enrollment {
+  background-image: url(../images/jake-nackos-C2PCa6DhlYE-unsplash.avif);
+  background-size: cover;
+  width: 100vw;
+  height: 45vh;
 }
 
-body {
+.enrollment__container {
+  width: 80vw;
+  margin: 0 10vw;
+}
+
+.enrollment__title {
+  color: $bg-white;
+  font-size: 78px;
+  padding-top: 30px;
+}
+
+.enrollment__text {
+  color: $bg-white;
+  font-size: 18px;
+  background-color: $primary;
+
+}
+
+.enrollment__link {
+  color: $secondary;
+  font-size: 18px;
+}
+
+.activities__container {
+  display: flex;
+  width: 80vw;
+  margin: 30px 10vw;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+
+.activities__card {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  width: 30%;
+  min-width: 300px;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
+.activities__text {
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
+.activities__icon {
+  margin: 30px;
+}
 
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+@supports (display: grid) {
+  .enrollment {
+    height: 65vh;
+    max-height: 600px;
+    padding: 30px 0;
+  }
+
+  .enrollment__container {
+    height: 100%;
+    width: 80vw;
+    margin: 0 10vw;
+    display: grid;
+    border: 10px solid $bg-white;
+    padding: 0 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "header header"
+      "date subscribe";
+    background-color: $primary;
+  }
+
+  .enrollment__title {
+    grid-area: header;
+    border-left: 10px solid $bg-white;
+    border-right: 10px solid $bg-white;
+    border-bottom: 10px solid $bg-white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: $primary;
+  }
+
+  .enrollment__date {
+    grid-area: date;
+    border-left: 10px solid $bg-white;
+    border-right: 5px solid $bg-white;
+    padding: 10px;
+    font-size: 35px;
+    background-color: $primary;
+  }
+
+  .enrollment__subscribe {
+    grid-area: subscribe;
+    border-right: 10px solid $bg-white;
+    border-left: 5px solid $bg-white;
+    padding: 10px;
+    background-color: $primary;
+  }
+
+  .enrollment__text {
+    font-size: 30px;
+
+  }
+
+  @media (max-width:720px) {
+    .enrollment {
+      height: 85vh;
+    }
+
+    .enrollment__title {
+      font-size: 4rem;
+    }
+
+    .enrollment__container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "header header"
+        "date date"
+        "subscribe subscribe";
+      background-color: $primary;
+    }
+
+    .enrollment__date {
+
+      border-left: 10px solid $bg-white;
+      border-right: 10px solid $bg-white;
+      border-bottom: 5px solid $bg-white;
+
+    }
+
+    .enrollment__text {
+      font-size: 1.3rem;
+    }
+
+    .enrollment__subscribe {
+
+      border-right: 10px solid $bg-white;
+      border-left: 10px solid $bg-white;
+      border-top: 5px solid $bg-white;
+
+    }
+  }
+
+  @media (max-width: 600px) {
+    .enrollment__container {
+
+      border-right: 0px solid $bg-white;
+      border-left: 0px solid $bg-white;
+      border-top: 10px solid $bg-white;
+      padding: 0;
+    }
   }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+@media (max-width: 1100px) {
+  .activities__container {
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
 }
