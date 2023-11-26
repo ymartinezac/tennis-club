@@ -1,0 +1,144 @@
+@use '../_variables.scss';
+
+.blog-entry__intro {
+    width: 50vw;
+    margin: 0 25vw;
+}
+
+.blog-entry__header {
+    background-image: url(../images/blog2.avif);
+    width: 100vw;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.263);
+    color: $bg-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-entry__header-h1 {
+    font-size: 78px;
+    color: $bg-white;
+}
+
+.blog-entry__author-link {
+    color: $secondary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: $blue;
+    }
+}
+
+.blog-entry__quote {
+    font-style: italic;
+    font-size: 24px;
+    width: 40%;
+}
+
+.blog-entry__intro-text {
+    width: 60%;
+    text-align: justify;
+}
+
+.blog-entry__intro {
+    display: flex;
+    column-gap: 10px;
+    padding: 40px 0;
+}
+
+.blog-entry__paragraph {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    .blog-entry__intro {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .blog-entry__quote {
+        width: 100%;
+    }
+
+    .blog-entry__intro-text {
+        width: 100%;
+    }
+}
+
+.blog-entry__list {
+    width: 50vw;
+    margin: 0 25vw;
+}
+
+.list-group-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 10px;
+}
+
+.blog-entry__content {
+    width: 50vw;
+    margin: 0 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-entry__content-quote {
+    font-style: italic;
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.blog-entry__img {
+    width: 60vw;
+    padding: 20px 0;
+
+}
+
+@media(max-width: 824px) {
+    .blog-entry__img {
+        width: 80vw;
+        padding: 0 10px;
+    }
+
+    .blog-entry__content {
+        width: 70vw;
+        margin: 0 15vw;
+        padding: 0 10px;
+
+    }
+
+    .blog-entry__list {
+        width: 70vw;
+        margin: 0 15vw;
+        padding: 0 10px;
+    }
+
+    .blog-entry__intro {
+        width: 70vw;
+        margin: 0 15vw;
+
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 564px) {
+
+    .blog-entry__content,
+    .blog-entry__list,
+    .blog-entry__intro {
+        width: 90vw;
+        margin: 0 5vw;
+        padding: 0;
+    }
+}
