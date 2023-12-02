@@ -10,21 +10,30 @@
 </head>
 
 <body>
-    <header>
-        <div class="header__container">
-            <div class="logo"><img class="logo__icon" src="./assets/images/logo-green.png" /><span
-                    class="logo__text">Solstice
-                    Tennis Club</span>
+    <include src="./views/header.html"></include>
+    <main class="join__main">
+        <h1 class="join__title">Join Us!</h1>
+        <form name="join" netlify>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <nav>
-                <a class="header__link" href="/">Home</a>
-                <a class="header__link" href="/members">Members</a>
-                <a class="header__link" href="/blog">Blog</a>
-                <a class="header__link" href="/join">Join</a>
-            </nav>
-        </div>
-    </header>
-    <div>blog</div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Level</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select level</option>
+                    <option value="1">Begginer</option>
+                    <option value="2">Intermediate</option>
+                    <option value="3">Advanced</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
