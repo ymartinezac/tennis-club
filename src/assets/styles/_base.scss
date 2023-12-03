@@ -13,6 +13,11 @@ h5 {
     margin: 0;
 }
 
+h1:is(.header-with-background) {
+    color: $bg-white;
+    font-size: 78px;
+}
+
 body {
     min-height: 100dvh;
     display: flex;
