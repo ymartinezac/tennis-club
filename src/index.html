@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>Solstice Tennis Club</title>
-</head>
+<include src="./views/head.html"></include>
 
 <body>
   <include src="./views/header.html"></include>
   <main>
     <section class="enrollment">
       <div class="enrollment__container">
-        <h1 class="enrollment__title">Enrollments Open!</h1>
+        <h1 class="enrollment__title header-with-background">Enrollments Open!</h1>
         <div class="enrollment__date">
           <p class="enrollment__text">Try outs will be held on <b>October 1st, 2023.</b></p>
         </div>
         <div class="enrollment__subscribe">
           <p class="enrollment__text">All levels are welcome.</p>
-          <button class="btn btn-secondary">Join the club!</button>
+          <a class="btn btn-secondary" href="./join.html">Join the club!</a>
         </div>
       </div>
     </section>

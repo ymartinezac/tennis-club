@@ -14,27 +14,27 @@ h5 {
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 }
 
 footer {
-    margin-top: auto;
-    width: 80vw;
-    margin: 0 10vw;
+    margin-top: 70px;
+    width: 100dvw;
+    padding: 0 10vw;
 }
 
 header {
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80vw;
-    margin: 5px 10vw;
+    width: 80dvw;
+    margin: 5px 10dvw;
 }
 
 .logo {
@@ -58,6 +58,7 @@ header {
 .footer__credits {
     border-top: 1px solid rgba(128, 128, 128, 0.5);
     padding: 10px 0;
+
 }
 
 .footer__credit {

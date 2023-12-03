@@ -2,12 +2,7 @@
 
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>Solstice Tennis Club</title>
-</head>
+<include src="./views/head.html"></include>
 
 <body>
     <include src="./views/header.html"></include>
@@ -16,15 +11,17 @@
         <form name="join" netlify>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control join__input" id="exampleFormControlInput1"
+                    placeholder="name@example.com">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput2" class="form-label">Name</label>
-                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                <input type="email" class="form-control join__input" id="exampleFormControlInput2"
+                    placeholder="Your name">
             </div>
             <div class="mb-3">
                 <label class="form-label">Level</label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select join__input" aria-label="Default select example">
                     <option selected>Select level</option>
                     <option value="1">Begginer</option>
                     <option value="2">Intermediate</option>
