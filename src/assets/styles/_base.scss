@@ -1,4 +1,4 @@
-@use '_variables.scss';
+@use 'variables.scss';
 
 * {
     box-sizing: border-box;
@@ -9,25 +9,25 @@ h2,
 h3,
 h4,
 h5 {
-    color: $primary;
     margin: 0;
+    color: $primary;
 }
 
 h1:is(.header-with-background) {
-    color: $bg-white;
     font-size: 78px;
+    color: $bg-white;
 }
 
 body {
-    min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    min-height: 100dvh;
 }
 
 footer {
-    margin-top: 70px;
     width: 100dvw;
     padding: 0 10vw;
+    margin-top: 70px;
 }
 
 header {
@@ -53,17 +53,16 @@ header {
 }
 
 .logo__text {
+    padding: 0;
+    margin-top: -8px;
     font-family: $headings-font-family;
     font-size: 35px;
     color: $primary;
-    padding: 0;
-    margin-top: -8px;
 }
 
 .footer__credits {
-    border-top: 1px solid rgba(128, 128, 128, 0.5);
     padding: 10px 0;
-
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
 }
 
 .footer__credit {
